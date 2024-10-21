@@ -1,3 +1,4 @@
+using Biblioteca.Application.Security.Implementations;
 using Biblioteca.Application.Services.Implementations;
 using Biblioteca.Application.Services.Interfaces;
 using Biblioteca.Domain.Interfaces;
@@ -15,14 +16,25 @@ public static class DependencyInjection
     public static void AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
     {
         //database
-        services.AddDbContext<DataContext>(options => options.UseInMemoryDatabase("Database"));
+        var environmentVariable = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+
+        if (environmentVariable == "Development")
+        {
+            services.AddDbContext<DataContext>(options => options.UseInMemoryDatabase("Database"));
+        }
+        
         services.AddScoped<DbContext, DataContext>();
+
+        
         
         //repositories
         services.AddScoped<IUserRepository, UserRepository>();
         
         //services
         services.AddScoped<IUserService, UserService>();
+        services.AddScoped<IAuthService, AuthService>();
+        services.AddScoped<ITokenService, TokenService>();
+        services.AddScoped<IPasswordEncoder, PasswordEncoder>();
     }
     
 }

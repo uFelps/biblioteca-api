@@ -13,3 +13,4 @@ C:\Users\User\Documents\Biblioteca\Biblioteca.Infra.Data\obj\Debug\net8.0\Biblio
 C:\Users\User\Documents\Biblioteca\Biblioteca.Infra.Data\obj\Debug\net8.0\refint\Biblioteca.Infra.Data.dll
 C:\Users\User\Documents\Biblioteca\Biblioteca.Infra.Data\obj\Debug\net8.0\Biblioteca.Infra.Data.pdb
 C:\Users\User\Documents\Biblioteca\Biblioteca.Infra.Data\obj\Debug\net8.0\ref\Biblioteca.Infra.Data.dll
+C:\Users\User\Documents\Biblioteca\Biblioteca.Infra.Data\obj\Debug\net8.0\Biblioteca.Infra.Data.sourcelink.json

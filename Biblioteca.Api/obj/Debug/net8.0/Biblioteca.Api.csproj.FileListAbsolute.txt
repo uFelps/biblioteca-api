@@ -53,3 +53,13 @@ C:\Users\User\Documents\Biblioteca\Biblioteca.Api\obj\Debug\net8.0\refint\Biblio
 C:\Users\User\Documents\Biblioteca\Biblioteca.Api\obj\Debug\net8.0\Biblioteca.Api.pdb
 C:\Users\User\Documents\Biblioteca\Biblioteca.Api\obj\Debug\net8.0\Biblioteca.Api.genruntimeconfig.cache
 C:\Users\User\Documents\Biblioteca\Biblioteca.Api\obj\Debug\net8.0\ref\Biblioteca.Api.dll
+C:\Users\User\Documents\Biblioteca\Biblioteca.Api\obj\Debug\net8.0\Biblioteca.Api.sourcelink.json
+C:\Users\User\Documents\Biblioteca\Biblioteca.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\User\Documents\Biblioteca\Biblioteca.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\User\Documents\Biblioteca\Biblioteca.Api\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\User\Documents\Biblioteca\Biblioteca.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\User\Documents\Biblioteca\Biblioteca.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\User\Documents\Biblioteca\Biblioteca.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\User\Documents\Biblioteca\Biblioteca.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\User\Documents\Biblioteca\Biblioteca.Api\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\User\Documents\Biblioteca\Biblioteca.Api\bin\Debug\net8.0\BCrypt.Net.dll

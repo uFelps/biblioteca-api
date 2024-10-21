@@ -31,6 +31,27 @@ public class UserRepository : IUserRepository
         return user;
     }
 
+    public async Task<User?> GetUserByEmailAsync(string email)
+    {
+        var user = await _dbContext
+            .Users
+            .AsNoTracking()
+            .FirstOrDefaultAsync(x => x.Email == email);
+
+        return user;
+    }
+
+    public User? GetUserByEmail(string email)
+    {
+        var user = _dbContext
+            .Users
+            .AsNoTracking()
+            .FirstOrDefault(x => x.Email == email);
+
+        return user;
+    }
+
+
     public async Task<User> PostUserAsync(User model)
     { 
         _dbContext.Users.Add(model);

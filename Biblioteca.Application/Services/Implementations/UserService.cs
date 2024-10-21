@@ -45,7 +45,7 @@ public class UserService : IUserService
         user.Name = model.Name;
         user.Email = model.Email;
         user.Password = model.Password;
-        user.Role = UserRole.READER;
+        user.Role = UserRole.Reader;
 
         var userDto = new UserOutputDto(await _repository.PostUserAsync(user));
 
@@ -59,7 +59,7 @@ public class UserService : IUserService
         user.Name = model.Name;
         user.Email = model.Email;
         user.Password = model.Password;
-        user.Role = UserRole.ADMIN;
+        user.Role = UserRole.Admin;
 
     
 
@@ -71,7 +71,7 @@ public class UserService : IUserService
 
     public async Task<UserOutputDto> UpdateUserAsync(int id, UserDto model)
     {
-        var user = _repository.GetUserByIdAsync(id).Result;
+        var user = await _repository.GetUserByIdAsync(id);
 
         if (user == null)
         {
@@ -98,7 +98,7 @@ public class UserService : IUserService
             throw new UserNotFoundException($"User not found. ID={id}");
         }
         
-        _repository.DeleteUser(user);
+       _repository.DeleteUser(user);
 
         return true;
     }

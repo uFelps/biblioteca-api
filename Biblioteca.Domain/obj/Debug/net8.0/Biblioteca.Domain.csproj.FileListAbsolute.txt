@@ -9,3 +9,4 @@ C:\Users\User\Documents\Biblioteca\Biblioteca.Domain\obj\Debug\net8.0\Biblioteca
 C:\Users\User\Documents\Biblioteca\Biblioteca.Domain\obj\Debug\net8.0\refint\Biblioteca.Domain.dll
 C:\Users\User\Documents\Biblioteca\Biblioteca.Domain\obj\Debug\net8.0\Biblioteca.Domain.pdb
 C:\Users\User\Documents\Biblioteca\Biblioteca.Domain\obj\Debug\net8.0\ref\Biblioteca.Domain.dll
+C:\Users\User\Documents\Biblioteca\Biblioteca.Domain\obj\Debug\net8.0\Biblioteca.Domain.sourcelink.json

@@ -16,11 +16,13 @@ public class UserOutputDto
         Id = user.Id;
         Name = user.Name;
         Email = user.Email;
+        Password = user.Password;
         Role = user.Role.ToString();
     }
 
     public int Id { get; set; }
     public string  Name { get; set; }
     public string Email { get; set; }
+    public string Password { get; set; }
     public string Role { get; set; }
 }

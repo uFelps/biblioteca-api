@@ -1,6 +1,7 @@
 using Biblioteca.Application.DTOs.User;
 using Biblioteca.Application.Exceptions;
 using Biblioteca.Application.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Biblioteca.Controllers;
@@ -17,6 +18,7 @@ public class UserController : ControllerBase
     }
 
     [HttpGet]
+    [Authorize(Roles = "Admin")]
     public async Task<ActionResult<List<UserOutputDto>>> GetAllUsers()
     {
         var users = await _userService.GetAllUsersAsync();
@@ -36,32 +38,7 @@ public class UserController : ControllerBase
 
         return Ok(user);
     }
-
-    [HttpPost]
-    public async Task<ActionResult<UserOutputDto>> PostUser([FromBody] UserDto model)
-    {
-        if (!ModelState.IsValid)
-        {
-            return BadRequest(new { message = ModelState });
-        }
-
-        var user = await _userService.PostUserAsync(model);
-
-        return CreatedAtAction(nameof(GetUserById), new { id = user.Id }, user);
-    }
-
-    [HttpPost("admin")]
-    public async Task<ActionResult<UserOutputDto>> PostUserAdmin([FromBody] UserDto model)
-    {
-        if (!ModelState.IsValid)
-        {
-            return BadRequest(new { message = ModelState });
-        }
-
-        var user = await _userService.PostUserAdminAsync(model);
-
-        return CreatedAtAction(nameof(GetUserById), new { id = user.Id }, user);
-    }
+    
     
     [HttpPut("{id:int}")]
     public async Task<ActionResult<UserOutputDto>> UpdateUser(int id, [FromBody] UserDto model)

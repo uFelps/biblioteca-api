@@ -10,4 +10,9 @@
       <ProjectReference Include="..\Biblioteca.Domain\Biblioteca.Domain.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="BCrypt.Net" Version="0.1.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.10" />
+    </ItemGroup>
+
 </Project>

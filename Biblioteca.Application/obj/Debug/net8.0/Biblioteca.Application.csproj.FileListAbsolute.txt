@@ -13,3 +13,4 @@ C:\Users\User\Documents\Biblioteca\Biblioteca.Application\obj\Debug\net8.0\Bibli
 C:\Users\User\Documents\Biblioteca\Biblioteca.Application\obj\Debug\net8.0\refint\Biblioteca.Application.dll
 C:\Users\User\Documents\Biblioteca\Biblioteca.Application\obj\Debug\net8.0\Biblioteca.Application.pdb
 C:\Users\User\Documents\Biblioteca\Biblioteca.Application\obj\Debug\net8.0\ref\Biblioteca.Application.dll
+C:\Users\User\Documents\Biblioteca\Biblioteca.Application\obj\Debug\net8.0\Biblioteca.Application.sourcelink.json

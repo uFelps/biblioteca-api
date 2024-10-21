@@ -17,3 +17,4 @@ C:\Users\User\Documents\Biblioteca\Biblioteca.Infra.IoC\obj\Debug\net8.0\Bibliot
 C:\Users\User\Documents\Biblioteca\Biblioteca.Infra.IoC\obj\Debug\net8.0\refint\Biblioteca.Infra.IoC.dll
 C:\Users\User\Documents\Biblioteca\Biblioteca.Infra.IoC\obj\Debug\net8.0\Biblioteca.Infra.IoC.pdb
 C:\Users\User\Documents\Biblioteca\Biblioteca.Infra.IoC\obj\Debug\net8.0\ref\Biblioteca.Infra.IoC.dll
+C:\Users\User\Documents\Biblioteca\Biblioteca.Infra.IoC\obj\Debug\net8.0\Biblioteca.Infra.IoC.sourcelink.json
