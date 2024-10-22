@@ -27,20 +27,23 @@ public class UserController : ControllerBase
     }
 
     [HttpGet("{id:int}")]
+    [Authorize(Roles = "Admin")]
     public async Task<ActionResult<UserOutputDto>> GetUserById(int id)
     {
-        var user = await _userService.GetUserByIdAsync(id);
-
-        if (user == null)
+        try
         {
-            return BadRequest(new { message = $"User not found. ID={id}" });
+            var user = await _userService.GetUserByIdAsync(id);
+            return Ok(user);
         }
-
-        return Ok(user);
+        catch (DataNotFoundException e)
+        {
+            return NotFound(new { message = e.Message });
+        }
     }
-    
-    
+
+
     [HttpPut("{id:int}")]
+    [Authorize(Roles = "Admin")]
     public async Task<ActionResult<UserOutputDto>> UpdateUser(int id, [FromBody] UserDto model)
     {
         if (!ModelState.IsValid)
@@ -53,13 +56,14 @@ public class UserController : ControllerBase
             var user = await _userService.UpdateUserAsync(id, model);
             return Ok(user);
         }
-        catch (UserNotFoundException e)
+        catch (DataNotFoundException e)
         {
             return NotFound(new { message = e.Message });
         }
     }
 
     [HttpDelete("{id:int}")]
+    [Authorize(Roles = "Admin")]
     public async Task<ActionResult> DeleteUser(int id)
     {
         try
@@ -67,9 +71,9 @@ public class UserController : ControllerBase
             await _userService.DeleteUserAsync(id);
             return NoContent();
         }
-        catch (UserNotFoundException e)
+        catch (DataNotFoundException e)
         {
-            return NotFound(new { message = e.Message});
+            return NotFound(new { message = e.Message });
         }
     }
 }

@@ -29,12 +29,14 @@ public static class DependencyInjection
         
         //repositories
         services.AddScoped<IUserRepository, UserRepository>();
+        services.AddScoped<IBookRepository, BookRepository>();
         
         //services
         services.AddScoped<IUserService, UserService>();
         services.AddScoped<IAuthService, AuthService>();
         services.AddScoped<ITokenService, TokenService>();
         services.AddScoped<IPasswordEncoder, PasswordEncoder>();
+        services.AddScoped<IBookService, BookService>();
     }
     
 }

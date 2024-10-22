@@ -31,51 +31,21 @@ public class UserService : IUserService
 
         if (user == null)
         {
-            return null;
+            throw new DataNotFoundException($"User not found. ID={id}");
         }
         
         var userDto = new UserOutputDto(user);
         
         return userDto;
     }
-
-    public async Task<UserOutputDto> PostUserAsync(UserDto model)
-    {
-        var user = new User();
-        user.Name = model.Name;
-        user.Email = model.Email;
-        user.Password = model.Password;
-        user.Role = UserRole.Reader;
-
-        var userDto = new UserOutputDto(await _repository.PostUserAsync(user));
-
-
-        return userDto;
-    }
-
-    public async Task<UserOutputDto> PostUserAdminAsync(UserDto model)
-    {
-        var user = new User();
-        user.Name = model.Name;
-        user.Email = model.Email;
-        user.Password = model.Password;
-        user.Role = UserRole.Admin;
-
     
-
-        var userDto = new UserOutputDto(await _repository.PostUserAsync(user));
-
-
-        return userDto;
-    }
-
     public async Task<UserOutputDto> UpdateUserAsync(int id, UserDto model)
     {
         var user = await _repository.GetUserByIdAsync(id);
 
         if (user == null)
         {
-            throw new UserNotFoundException($"User not found. ID={id}");
+            throw new DataNotFoundException($"User not found. ID={id}");
         }
 
         user.Name = model.Name;
@@ -95,10 +65,10 @@ public class UserService : IUserService
 
         if (user == null)
         {
-            throw new UserNotFoundException($"User not found. ID={id}");
+            throw new DataNotFoundException($"User not found. ID={id}");
         }
         
-       _repository.DeleteUser(user);
+        _repository.DeleteUser(user);
 
         return true;
     }
