@@ -23,6 +23,7 @@ public class Book
     public string Author { get; set; }
     public int Pages { get; set; }
     public DateTime Released { get; set; }
+    public List<BookReservation> Reservations { get; set; }
     
     
 }

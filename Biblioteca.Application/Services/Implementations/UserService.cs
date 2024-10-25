@@ -25,7 +25,19 @@ public class UserService : IUserService
         return usersDto;
     }
 
-    public async Task<UserOutputDto?> GetUserByIdAsync(int id)
+    public async Task<User> GetUserByIdAsync(int id)
+    {
+        var user = await _repository.GetUserByIdAsync(id);
+
+        if (user == null)
+        {
+            throw new DataNotFoundException($"User not found. ID={id}");
+        }
+
+        return user;
+    }
+
+    public async Task<UserOutputDto> GetUserDtoByIdAsync(int id)
     {
         var user = await _repository.GetUserByIdAsync(id);
 

@@ -1,5 +1,6 @@
 using Biblioteca.Application.DTOs.User;
 using Biblioteca.Application.Exceptions;
+using Biblioteca.Application.Security.Interfaces;
 using Biblioteca.Application.Services.Interfaces;
 using Biblioteca.Domain.Entities;
 using Biblioteca.Domain.Enuns;

@@ -1,4 +1,5 @@
 using Biblioteca.Application.Security.Implementations;
+using Biblioteca.Application.Security.Interfaces;
 using Biblioteca.Application.Services.Implementations;
 using Biblioteca.Application.Services.Interfaces;
 using Biblioteca.Domain.Interfaces;
@@ -30,6 +31,7 @@ public static class DependencyInjection
         //repositories
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<IBookRepository, BookRepository>();
+        services.AddScoped<IBookReservationRepository, BookReservationRepository>();
         
         //services
         services.AddScoped<IUserService, UserService>();
@@ -37,6 +39,7 @@ public static class DependencyInjection
         services.AddScoped<ITokenService, TokenService>();
         services.AddScoped<IPasswordEncoder, PasswordEncoder>();
         services.AddScoped<IBookService, BookService>();
+        services.AddScoped<IBookReservationService, BookReservationService>();
     }
     
 }

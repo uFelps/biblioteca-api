@@ -27,7 +27,19 @@ public class BookService : IBookService
         return booksDto;
     }
 
-    public async Task<BookDto> GetBookById(int id)
+    public async Task<Book> GetBookById(int id)
+    {
+        var book = await _repository.GetBookById(id);
+
+        if (book == null)
+        {
+            throw new DataNotFoundException($"Book not found. ID={id}");
+        }
+
+        return book;
+    }
+
+    public async Task<BookDto> GetBookDtoById(int id)
     {
         var book = await _repository.GetBookById(id);
 
