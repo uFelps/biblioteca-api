@@ -1,4 +1,4 @@
-# E-commerce microservices
+# Biblioteca.Api
 
 Biblioteca.Api é uma API Web ASP.NET Core projetada para gerenciar um sistema de biblioteca. 
 A API fornece endpoints para autenticação de usuários, gerenciamento de livros, reservas de livros 
@@ -26,6 +26,8 @@ BookReservation
 - Criar uma nova reserva de livro para um livro específico.
 - Fechar uma reserva de livro específica pelo ID.
 
+
+Você pode encontrar mais detalhes das rotas em: http://localhost:8080/swagger/index.html
 <hr>
 
 <br>
