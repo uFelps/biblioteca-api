@@ -1,8 +1,5 @@
 using Biblioteca.Domain.Entities;
-using Biblioteca.Domain.Enuns;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Microsoft.Extensions.Options;
 namespace Biblioteca.Infra.Data.Context;
 
 

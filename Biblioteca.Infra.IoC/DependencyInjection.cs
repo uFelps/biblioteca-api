@@ -13,26 +13,23 @@ namespace Biblioteca.Infra.IoC;
 
 public static class DependencyInjection
 {
-
     public static void AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
     {
-        //database
-        var environmentVariable = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
-
-        if (environmentVariable == "Development")
-        {
-            services.AddDbContext<DataContext>(options => options.UseInMemoryDatabase("Database"));
-        }
         
+        services.AddDbContext<DataContext>(options => 
+            options.UseSqlServer(configuration.GetConnectionString("ConnectionString")));
+
+
         services.AddScoped<DbContext, DataContext>();
+        
+        
 
-        
-        
+
         //repositories
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<IBookRepository, BookRepository>();
         services.AddScoped<IBookReservationRepository, BookReservationRepository>();
-        
+
         //services
         services.AddScoped<IUserService, UserService>();
         services.AddScoped<IAuthService, AuthService>();
@@ -41,5 +38,4 @@ public static class DependencyInjection
         services.AddScoped<IBookService, BookService>();
         services.AddScoped<IBookReservationService, BookReservationService>();
     }
-    
 }

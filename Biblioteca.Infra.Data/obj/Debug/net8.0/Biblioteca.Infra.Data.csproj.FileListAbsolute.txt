@@ -1,4 +1,5 @@
 C:\Users\User\Documents\Biblioteca\Biblioteca.Infra.Data\bin\Debug\net8.0\Biblioteca.Infra.Data.deps.json
+C:\Users\User\Documents\Biblioteca\Biblioteca.Infra.Data\bin\Debug\net8.0\Biblioteca.Infra.Data.runtimeconfig.json
 C:\Users\User\Documents\Biblioteca\Biblioteca.Infra.Data\bin\Debug\net8.0\Biblioteca.Infra.Data.dll
 C:\Users\User\Documents\Biblioteca\Biblioteca.Infra.Data\bin\Debug\net8.0\Biblioteca.Infra.Data.pdb
 C:\Users\User\Documents\Biblioteca\Biblioteca.Infra.Data\bin\Debug\net8.0\Biblioteca.Domain.dll
@@ -8,9 +9,10 @@ C:\Users\User\Documents\Biblioteca\Biblioteca.Infra.Data\obj\Debug\net8.0\Biblio
 C:\Users\User\Documents\Biblioteca\Biblioteca.Infra.Data\obj\Debug\net8.0\Biblioteca.Infra.Data.AssemblyInfoInputs.cache
 C:\Users\User\Documents\Biblioteca\Biblioteca.Infra.Data\obj\Debug\net8.0\Biblioteca.Infra.Data.AssemblyInfo.cs
 C:\Users\User\Documents\Biblioteca\Biblioteca.Infra.Data\obj\Debug\net8.0\Biblioteca.Infra.Data.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\Biblioteca\Biblioteca.Infra.Data\obj\Debug\net8.0\Biblioteca.Infra.Data.sourcelink.json
 C:\Users\User\Documents\Biblioteca\Biblioteca.Infra.Data\obj\Debug\net8.0\Bibliote.1046DA29.Up2Date
 C:\Users\User\Documents\Biblioteca\Biblioteca.Infra.Data\obj\Debug\net8.0\Biblioteca.Infra.Data.dll
 C:\Users\User\Documents\Biblioteca\Biblioteca.Infra.Data\obj\Debug\net8.0\refint\Biblioteca.Infra.Data.dll
 C:\Users\User\Documents\Biblioteca\Biblioteca.Infra.Data\obj\Debug\net8.0\Biblioteca.Infra.Data.pdb
+C:\Users\User\Documents\Biblioteca\Biblioteca.Infra.Data\obj\Debug\net8.0\Biblioteca.Infra.Data.genruntimeconfig.cache
 C:\Users\User\Documents\Biblioteca\Biblioteca.Infra.Data\obj\Debug\net8.0\ref\Biblioteca.Infra.Data.dll
-C:\Users\User\Documents\Biblioteca\Biblioteca.Infra.Data\obj\Debug\net8.0\Biblioteca.Infra.Data.sourcelink.json
